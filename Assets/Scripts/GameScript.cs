@@ -38,7 +38,11 @@ public class GameScript : MonoBehaviour
 		emilyScript = GetComponentInChildren<EmilyScript> ();
 		NextWave (2.0f);
 	}
-
+	void Update() {
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+			Application.Quit ();
+		}
+	}
 
 	public int random(int max) {
 		if (rng == null) {

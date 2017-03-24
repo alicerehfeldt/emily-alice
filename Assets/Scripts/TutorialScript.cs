@@ -14,6 +14,8 @@ public class TutorialScript : MonoBehaviour {
 	void Update () {
 		if (Input.GetMouseButtonDown (0)) {
 			SceneManager.LoadScene ("NEW LEVEL");
+		} else if (Input.GetKeyDown (KeyCode.Escape)) {
+			Application.Quit ();
 		}
 	}
 }

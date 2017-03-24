@@ -14,6 +14,8 @@ public class TitleScreenScript : MonoBehaviour {
 	void Update () {
 		if (Input.GetMouseButtonDown (0)) {
 			SceneManager.LoadScene ("Intro");
+		} else if (Input.GetKeyDown (KeyCode.Escape)) {
+			Application.Quit ();
 		}
 	}
 }
