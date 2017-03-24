@@ -190,6 +190,7 @@ public class LassoScript : GameObjectScript {
 		Debug.Log ("LASSOED THIS BUG: " + bug.ToString());
 		BugScript bugScript = bug.GetComponent<BugScript>();
 		bugScript.lassoed = true;
+		Destroy(bugScript.GetComponent<BoxCollider2D>());
 		haveBugLassoed = true;
 		emilyScript.DefeatedEnemy ();
 		StartCoroutine(ClearLineAfterLasso ());

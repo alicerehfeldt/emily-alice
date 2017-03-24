@@ -28,6 +28,7 @@ public class GameScript : MonoBehaviour
 	}
 
 	void Start() {
+		Application.targetFrameRate = 60;
 		sfx = GetComponent<SFXScript> ();
 		bugQueueScript = GetComponentInChildren<BugQueueScript> ();
 		bugFarmScript = GetComponentInChildren<BugSpawnerScript> ();
