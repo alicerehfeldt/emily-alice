@@ -103,7 +103,7 @@ public class FinalBossScript : BugScript {
 		} else {
 			aliceScript.isAttacking = false;
 			inputSequenceScript.playerSequence.Clear ();
-
+			healthPool.TakeDamage (1);
 
 		}
 	}
