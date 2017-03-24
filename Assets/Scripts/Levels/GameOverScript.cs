@@ -7,7 +7,7 @@ public class GameOverScript : MonoBehaviour {
 	bool canProceed = false;
 	// Use this for initialization
 	void Start () {
-
+		StartCoroutine(Unlock());
 	}
 
 	IEnumerator Unlock() {
